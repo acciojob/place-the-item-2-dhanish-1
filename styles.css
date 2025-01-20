@@ -1,2 +1,30 @@
+]/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap;        /* Allow items to wrap to the next row when needed */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;    /* Center items vertically */
+  gap: 0; /* No gap between items */
+  width: 80%; /* Adjust width if needed */
+  height: 80%; /* Adjust height if needed */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  flex: 1; /* Allow items to take equal space */
+  min-width: 100px; /* Prevent items from becoming too small */
+}
